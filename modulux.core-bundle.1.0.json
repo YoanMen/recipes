@@ -7,6 +7,7 @@
               },
 
             "execute-cmd": [
+                    "php scripts/copy-config.php",
                     "npm install gridjs",
                     "npm install toastify-js",
                     "php bin/console assets:install --symlink public",
