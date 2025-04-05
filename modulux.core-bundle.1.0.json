@@ -5,9 +5,7 @@
               "bundles": {
                   "Modulux\\CoreBundle\\ModuluxCoreBundle": ["all"]
               },
-              "copy-from-recipe": {
-                "config": "%CONFIG_DIR%"
-            },
+
             "execute-cmd": [
                     "npm install gridjs",
                     "npm install toastify-js",
