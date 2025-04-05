@@ -1,12 +1,18 @@
 {
-  "manifest_version": 1,
-  "bundles": {
-      "Modulux\\CoreBundle\\ModuluxCoreBundle": ["all"]
-  },
-  "copy": {
-      "config/config.json": "src/Resources/config/config.json"
-  },
-  "execute-cmd": [
-      "php bin/console modulux:core:permissions"
-  ]
+  "manifests": {
+      "modulux/core-bundle": {
+          "manifest": {
+              "bundles": {
+                  "Modulux\\CoreBundle\\ModuluxCoreBundle": ["all"]
+              },
+              "copy-from-recipe": {
+                  "config/config.json": "config/config.json"
+              },
+              "execute-cmd": [
+                  "php bin/console modulux:core:permissions"
+              ]
+          },
+          "ref": "0bad79f61f4d503f588aad52dec115d098abc1bc"
+      }
+  }
 }
