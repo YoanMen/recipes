@@ -3,7 +3,7 @@
       "modulux/core-bundle": {
           "manifest": {
               "copy-from-recipe": {
-                  "config/config.json": "config/config.json"
+                  "config/": "config/config.json"
               },
               "execute-cmd": [
                   "php bin/console modulux:core:permissions"
