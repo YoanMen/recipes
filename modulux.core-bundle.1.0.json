@@ -6,18 +6,11 @@
                   "Modulux\\CoreBundle\\ModuluxCoreBundle": ["all"]
               },
 
-            "execute-cmd": [
-                    "php scripts/copy-config.php",
-                    "npm install gridjs",
-                    "npm install toastify-js",
-                    "php bin/console assets:install --symlink public",
-                    "npm install ./vendor/friendsofsymfony/jsrouting-bundle/Resources/",
-                    "php bin/console doctrine:database:create --if-not-exists",
-                    "php bin/console doctrine:schema:update --force",
-                    "php bin/console cache:clear",
-                    "php bin/console modulux:core:permissions",
-                    "npm run dev"
-                ]
+            "composer-scripts": {
+              "php scripts/copy-config.php"  : "php-script",
+              "npm install gridjs" : "npm",
+              "npm install toastify-js" : "npm",
+            }
           },
           "ref": "7405f3af1312d1f9121afed4dddef638c6c7ff00"
       }
