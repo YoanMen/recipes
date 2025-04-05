@@ -6,7 +6,7 @@
                   "Modulux\\CoreBundle\\ModuluxCoreBundle": ["all"]
               },
               "copy-from-recipe": {
-                "config/config.json": "%CONFIG_DIR%/config.json"
+                "config": "%CONFIG_DIR%"
             },
             "execute-cmd": [
                     "npm install gridjs",
