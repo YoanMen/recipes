@@ -9,9 +9,8 @@
           {
             "file": "routes.yaml",
             "content": "modulux_core_bundle.routes:\n    resource: '@ModuluxCoreBundle/config/routes.yaml'",
-            "position": "before_target",
-            "target": "controllers"
-          }
+            "position": "top"
+        }
         ],
         "composer-scripts": {
           "npm install gridjs": "script",
