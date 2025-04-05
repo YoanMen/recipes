@@ -2,9 +2,6 @@
   "manifests": {
       "modulux/core-bundle": {
           "manifest": {
-              "bundles": {
-                  "Modulux\\CoreBundle\\ModuluxCoreBundle": ["all"]
-              },
               "copy-from-recipe": {
                   "config/config.json": "config/config.json"
               },
