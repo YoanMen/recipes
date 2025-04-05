@@ -1,0 +1,12 @@
+{
+  "manifest_version": 1,
+  "bundles": {
+      "Modulux\\CoreBundle\\ModuluxCoreBundle": ["all"]
+  },
+  "copy": {
+      "config/config.json": "src/Resources/config/config.json"
+  },
+  "execute-cmd": [
+      "php bin/console modulux:core:permissions"
+  ]
+}
