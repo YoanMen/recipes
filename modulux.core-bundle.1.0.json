@@ -5,13 +5,12 @@
               "bundles": {
                   "Modulux\\CoreBundle\\ModuluxCoreBundle": ["all"]
               },
-
-            "composer-scripts": {
-              "php scripts/copy-config.php"  : "php-script",
-              "npm install gridjs" : "npm",
-              "echo 'export PATH=$PATH:./node_modules/.bin' >> ~/.bashrc" : "bash",
-              "npm install toastify-js" : "npm"
-            }
+              "composer-scripts": {
+                  "php scripts/copy-config.php": "php-script",
+                  "echo 'Exécution de npm install gridjs...' && npm install gridjs && echo 'npm install gridjs terminé.'": "bash",
+                  "echo 'export PATH=$PATH:./node_modules/.bin' >> ~/.bashrc": "bash",
+                  "echo 'Exécution de npm install toastify-js...' && npm install toastify-js && echo 'npm install toastify-js terminé.'": "bash"
+              }
           },
           "ref": "7405f3af1312d1f9121afed4dddef638c6c7ff00"
       }
