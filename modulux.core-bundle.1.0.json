@@ -9,7 +9,7 @@
             "composer-scripts": {
               "php scripts/copy-config.php"  : "php-script",
               "npm install gridjs" : "npm",
-              "npm install toastify-js" : "npm",
+              "npm install toastify-js" : "npm"
             }
           },
           "ref": "7405f3af1312d1f9121afed4dddef638c6c7ff00"
