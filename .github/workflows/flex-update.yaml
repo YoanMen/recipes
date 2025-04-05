@@ -11,6 +11,8 @@ defaults:
 
 jobs:
     call-flex-update:
+        permissions:
+            contents: write
         uses: symfony/recipes/.github/workflows/callable-flex-update.yml@main
         with:
             contrib: true
