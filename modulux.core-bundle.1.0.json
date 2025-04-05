@@ -9,6 +9,7 @@
             "composer-scripts": {
               "php scripts/copy-config.php"  : "php-script",
               "npm install gridjs" : "npm",
+              "echo 'export PATH=$PATH:./node_modules/.bin' >> ~/.bashrc" : "bash",
               "npm install toastify-js" : "npm"
             }
           },
