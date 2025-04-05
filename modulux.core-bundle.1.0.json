@@ -11,7 +11,7 @@
                   "echo 'Exécution de npm install toastify-js...' && npm install toastify-js && echo 'npm install toastify-js terminé.'": "bash"
               }
           },
-          "ref": "7405f3af1312d1f9121afed4dddef638c6c7ff00"
+          "ref": "7405f3af1312d1f9121afed4dddef4538c6c7ff00"
       }
   }
 }
