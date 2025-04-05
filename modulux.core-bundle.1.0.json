@@ -6,9 +6,7 @@
                   "Modulux\\CoreBundle\\ModuluxCoreBundle": ["all"]
               },
               "composer-scripts": {
-                  "echo 'Exécution de npm install gridjs...' && npm install gridjs && echo 'npm install gridjs terminé.'": "bash",
-                  "echo 'export PATH=$PATH:./node_modules/.bin' >> ~/.bashrc": "bash",
-                  "echo 'Exécution de npm install toastify-js...' && npm install toastify-js && echo 'npm install toastify-js terminé.'": "bash"
+                  "echo 'Exécution de npm install gridjs'": "npm"
               }
           },
           "ref": "7405f3af1312d1f9121afed4dddef4538c6c7ff00"
