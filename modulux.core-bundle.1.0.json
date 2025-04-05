@@ -7,7 +7,7 @@
         },
         "add-lines": [
           {
-            "file": "routes.yaml",
+            "file": "config/routes.yaml",
             "content": "modulux_core_bundle.routes:\n    resource: '@ModuluxCoreBundle/config/routes.yaml'",
             "position": "top"
         }
