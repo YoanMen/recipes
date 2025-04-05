@@ -5,11 +5,19 @@
               "bundles": {
                   "Modulux\\CoreBundle\\ModuluxCoreBundle": ["all"]
               },
-              "composer-scripts": {
-                  "echo 'Exécution de npm install gridjs'": "npm"
-              }
+
+            "composer-scripts": {
+              "npm install gridjs" : "script",
+              "npm install toastify-js" : "script",
+              "assets:install --symlink public" : "symfony-cmd",
+              "npm install ./vendor/friendsofsymfony/jsrouting-bundle/Resources/" : "script",
+              "doctrine:database:create --if-not-exists" : "symfony-cmd",
+              "doctrine:schema:update --force" : "symfony-cmd",
+              "modulux:core:permissions" : "symfony-cmd",
+              "npm run dev" : "script"
+            }
           },
-          "ref": "7405f3af1312d1f9121afed4dddef4538c6c7ff00"
+          "ref": "7405f3af1312d1f9121afed4dddef638c6c7ff00"
       }
   }
 }
