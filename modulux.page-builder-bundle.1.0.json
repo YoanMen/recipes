@@ -25,13 +25,13 @@
           },
           {
             "file": "./vendor/modulux/core-bundle/templates/base.html.twig",
-            "content": "     {{ encore_entry_link_tags('pageBuilder') }}",
+            "content": "      {{ encore_entry_link_tags('pageBuilder') }}",
             "position": "after_target",
             "target": "{% block stylesheets %}"
           },
           {
             "file": "./vendor/modulux/core-bundle/templates/base.html.twig",
-            "content": "     {{ encore_entry_script_tags('pageBuilder') }}",
+            "content": "      {{ encore_entry_script_tags('pageBuilder') }}",
             "position": "after_target",
             "target": "{% block javascripts %}"
           }
@@ -51,8 +51,7 @@
           "npm install swiper": "script",
           "doctrine:database:create --if-not-exists": "symfony-cmd",
           "doctrine:schema:update --force": "symfony-cmd",
-          "modulux:page:permissions": "symfony-cmd",
-          "npm run dev": "script"
+          "modulux:page:permissions": "symfony-cmd"
         }
       },
       "ref": "caa7daf2aa9e5ea430162b4caae52ba9adf42f44"

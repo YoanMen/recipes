@@ -19,7 +19,7 @@
           {
             "file": "webpack.config.js",
             "content": "    .addPlugin(new FosRouting())",
-            "position": "after_target",
+            "position": "after_target", 
             "target": ".addEntry('app', './assets/app.js')"
           },
           {
@@ -54,8 +54,7 @@
           "npm install ./vendor/friendsofsymfony/jsrouting-bundle/Resources/": "script",
           "doctrine:database:create --if-not-exists": "symfony-cmd",
           "doctrine:schema:update --force": "symfony-cmd",
-          "modulux:core:permissions": "symfony-cmd",
-          "npm run dev": "script"
+          "modulux:core:permissions": "symfony-cmd"
         },
         "post-install-output": [
           "<bg=blue;fg=white>              </>",
