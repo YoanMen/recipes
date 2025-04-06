@@ -2,9 +2,6 @@
   "recipes": {
       "modulux/core-bundle": [
           "1.0"
-      ],
-      "modulux/page-builder-bundle": [
-          "1.0"
       ]
   },
   "branch": "main",
