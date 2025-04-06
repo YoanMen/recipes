@@ -10,6 +10,23 @@
             "file": "config/routes.yaml",
             "content": "modulux_core_bundle.routes:\n    resource: '@ModuluxCoreBundle/config/routes.yaml'",
             "position": "top"
+        },
+        {
+          "file": "webpack.config.js",
+          "content": "const FosRouting = require('fos-router/webpack/FosRouting');",
+          "position": "top"
+        },
+        {
+          "file": "webpack.config.js",
+          "content": "    .addPlugin(new FosRouting())",
+          "position": "after_target",
+          "target": "Encore"
+        },
+        {
+          "file": "webpack.config.js",
+          "content": "    .addEntry('core', './vendor/modulux/core_bundle/assets/js/app.js')",
+          "position": "after_target",
+          "target": "Encore"
         }
         ],
         "composer-scripts": {
@@ -23,7 +40,17 @@
           "npm run dev": "script"
         }
       },
-      "ref": "7405f3af1312d1f9121afed4dddef638c6c7ff00"
+      "post-install-output": [
+          "<bg=blue;fg=white>              </>",
+          "<bg=blue;fg=white> What's next? </>",
+          "<bg=blue;fg=white>              </>",
+          "",
+          "  * <fg=blue>Create</> your development user:",
+          "    Execute the following command to create a development user:",
+          "    <comment>php bin/console modulux:create:modulux PASSWORD</comment>",
+          "    Replace <comment>PASSWORD</comment> with the desired password."
+        ],
+      "ref": "aebd00ff6a190b18841c73e875550eade11e1f24"
     }
   }
 }

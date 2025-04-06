@@ -1,0 +1,49 @@
+{
+  "manifests": {
+    "modulux/core-bundle": {
+      "manifest": {
+        "bundles": {
+          "Modulux\\PageBuilderBundle\\PageBuilderBundle": ["all"]
+        },
+        "add-lines": [
+          {
+            "file": "config/routes.yaml",
+            "content": "modulux_page_builder_bundle.routes:\n    resource: '@ModuluxPageBuilderBundle/config/routes.yaml'",
+            "position": "bottom"
+          },
+          {
+            "file": "webpack.config.js",
+            "content": "    .addEntry('pageBuilder', './vendor/modulux/page_builder_bundle/assets/js/app.js')",
+            "position": "after_target",
+            "target": "Encore"
+          },
+          {
+            "file": "webpack.config.js",
+            "content": "    .addEntry('global', './vendor/modulux/page_builder_bundle/assets/js/global.js')",
+            "position": "after_target",
+            "target": "Encore"
+          }
+        ],
+        "composer-scripts": {          
+          "npm aos": "script",
+          "npm glightbox": "script",
+          "npm grapesjs": "script",
+          "npm grapesjs-blocks-basic": "script",
+          "npm grapesjs-component-code-editor": "script",
+          "npm grapesjs-custom-code": "script",
+          "npm grapesjs-parser-postcss": "script",
+          "npm grapesjs-style-filter": "script",
+          "npm grapesjs-navbar": "script",
+          "npm grapesjs-style-gradient": "script",
+          "npm grapesjs-tooltip": "script",
+          "npm swiper": "script",
+          "doctrine:database:create --if-not-exists": "symfony-cmd",
+          "doctrine:schema:update --force": "symfony-cmd",
+          "modulux:page:permissions": "symfony-cmd",
+          "npm run dev": "script"
+        }
+      },
+      "ref": "00005768a500963d9701fdec260e8b8a1c27a1d8"
+    }
+  }
+}
