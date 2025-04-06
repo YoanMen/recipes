@@ -36,7 +36,7 @@
             "target": "{% block javascripts %}"
           }
         ],
-        "composer-scripts": {          
+        "composer-scripts": {
           "npm install aos": "script",
           "npm install glightbox": "script",
           "npm install grapesjs": "script",
