@@ -24,7 +24,7 @@
         },
         {
           "file": "webpack.config.js",
-          "content": "    .addEntry('core', './vendor/modulux/core_bundle/assets/js/app.js')",
+          "content": "    .addEntry('core', './vendor/modulux/core-bundle/assets/js/app.js')",
           "position": "after_target",
           "target": ".addEntry('app', './assets/app.js')"
         }

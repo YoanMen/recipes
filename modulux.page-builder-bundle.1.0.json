@@ -13,13 +13,13 @@
           },
           {
             "file": "webpack.config.js",
-            "content": "    .addEntry('pageBuilder', './vendor/modulux/page_builder_bundle/assets/js/app.js')",
+            "content": "    .addEntry('pageBuilder', './vendor/modulux/page-builder_bundle/assets/js/app.js')",
             "position": "after_target",
             "target": ".addEntry('app', './assets/app.js')"
           },
           {
             "file": "webpack.config.js",
-            "content": "    .addEntry('global', './vendor/modulux/page_builder_bundle/assets/js/global.js')",
+            "content": "    .addEntry('global', './vendor/modulux/page_builder-bundle/assets/js/global.js')",
             "position": "after_target",
             "target": ".addEntry('app', './assets/app.js')"
           }
