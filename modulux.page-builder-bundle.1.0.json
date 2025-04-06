@@ -3,7 +3,7 @@
     "modulux/page-builder-bundle": {
       "manifest": {
         "bundles": {
-          "Modulux\\PageBuilderBundle\\PageBuilderBundle": ["all"]
+          "Modulux\\PageBuilderBundle\\ModuluxPageBuilderBundle": ["all"]
         },
         "add-lines": [
           {
