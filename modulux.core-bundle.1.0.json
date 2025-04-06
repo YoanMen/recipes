@@ -20,13 +20,13 @@
           "file": "webpack.config.js",
           "content": "    .addPlugin(new FosRouting())",
           "position": "after_target",
-          "target": "Encore"
+          "target": ".addEntry('app', './assets/app.js')"
         },
         {
           "file": "webpack.config.js",
           "content": "    .addEntry('core', './vendor/modulux/core_bundle/assets/js/app.js')",
           "position": "after_target",
-          "target": "Encore"
+          "target": ".addEntry('app', './assets/app.js')"
         }
         ],
         "composer-scripts": {
