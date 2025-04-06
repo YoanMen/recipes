@@ -42,7 +42,7 @@
           },
           {
             "file": "config/packages/security.yaml",
-            "content": "    - { path: ^/modulux/login, roles: PUBLIC_ACCESS }\n    - { path: ^/modulux, roles: ROLE_MODULUX }",
+            "content": "        - { path: ^/modulux/login, roles: PUBLIC_ACCESS }\n        - { path: ^/modulux, roles: ROLE_MODULUX }",
             "position": "after_target",
             "target": "access_control:"
           }
