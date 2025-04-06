@@ -30,7 +30,7 @@
           },
           {
             "file": "config/packages/security.yaml",
-            "content": "        modulux_provider:\n            entity:\n            class: Modulux\\CoreBundle\\Entity\\User\n            property: username",
+            "content": "        modulux_provider:\n            entity:\n                class: Modulux\\CoreBundle\\Entity\\User\n                property: username",
             "position": "after_target",
             "target": "providers:"
           },
