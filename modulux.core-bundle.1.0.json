@@ -65,7 +65,7 @@
           "  * <fg=blue>Create</> your development user:",
           "    Execute the following command to create a development user:",
           "    <comment>php bin/console modulux:create:modulux PASSWORD</comment>",
-          "    Replace <comment>PASSWORD</comment> with the desired password."
+          "    Replace <comment>PASSWORD</comment> with the desired password, login is modulux."
         ]
       },
       "ref": "aebd00ff6a190b18841c73e875550eade11e1f24"
