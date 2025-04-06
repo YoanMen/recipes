@@ -32,7 +32,7 @@
             "file": "config/packages/security.yaml",
             "content": "        modulux_provider:\n        entity:\n        class: Modulux\\CoreBundle\\Entity\\User\n        property: username",
             "position": "after_target",
-            "target": "access_control:"
+            "target": "providers::"
           },
           {
             "file": "config/packages/security.yaml",
@@ -44,7 +44,7 @@
             "file": "config/packages/security.yaml",
             "content": "    - { path: ^/modulux/login, roles: PUBLIC_ACCESS }\n    - { path: ^/modulux, roles: ROLE_MODULUX }",
             "position": "after_target",
-            "target": "providers:"
+            "target": "access_control:"
           }
         ],
         "composer-scripts": {
