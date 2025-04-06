@@ -37,7 +37,7 @@
           }
         ],
         "composer-scripts": {          
-          "npm install aos --save": "script",
+          "npm install aos": "script",
           "npm install glightbox": "script",
           "npm install grapesjs": "script",
           "npm install grapesjs-blocks-basic": "script",
