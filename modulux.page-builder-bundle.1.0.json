@@ -1,6 +1,6 @@
 {
   "manifests": {
-    "modulux/core-bundle": {
+    "modulux/page-builder-bundle": {
       "manifest": {
         "bundles": {
           "Modulux\\PageBuilderBundle\\PageBuilderBundle": ["all"]
