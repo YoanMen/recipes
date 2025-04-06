@@ -22,6 +22,18 @@
             "content": "    .addEntry('global', './vendor/modulux/page_builder-bundle/assets/js/global.js')",
             "position": "after_target",
             "target": ".addEntry('app', './assets/app.js')"
+          },
+          {
+            "file": "./vendor/modulux/core-bundle/templates/base.html.twig",
+            "content": "     {{ encore_entry_link_tags('pageBuilder') }}",
+            "position": "after_target",
+            "target": "{% block stylesheets %}"
+          },
+          {
+            "file": "./vendor/modulux/core-bundle/templates/base.html.twig",
+            "content": "     {{ encore_entry_script_tags('pageBuilder') }}",
+            "position": "after_target",
+            "target": "{% block javascripts %}"
           }
         ],
         "composer-scripts": {          
