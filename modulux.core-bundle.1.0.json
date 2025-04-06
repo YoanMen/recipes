@@ -36,7 +36,7 @@
           },
           {
             "file": "config/packages/security.yaml",
-            "content": "        modulux:\n        lazy: true\n        provider: modulux_provider\n        form_login:\n            login_path: modulux_security_login\n            check_path: modulux_security_login\n            enable_csrf: true\n        logout:\n            path: modulux_security_logout",
+            "content": "        modulux:\n            lazy: true\n            provider: modulux_provider\n            form_login:\n                login_path: modulux_security_login\n                check_path: modulux_security_login\n                enable_csrf: true\n        logout:\n            path: modulux_security_logout",
             "position": "after_target",
             "target": "firewalls:"
           },
