@@ -19,7 +19,7 @@
           {
             "file": "webpack.config.js",
             "content": "    .addPlugin(new FosRouting())",
-            "position": "after_target", 
+            "position": "after_target",
             "target": ".addEntry('app', './assets/app.js')"
           },
           {
@@ -42,14 +42,16 @@
           },
           {
             "file": "config/packages/security.yaml",
-            "content": "        - { path: ^/modulux/login, roles: PUBLIC_ACCESS }\n        - { path: ^/modulux, roles: ROLE_MODULUX }",
+            "content": "        - { path: ^/modulux/connexion, roles: PUBLIC_ACCESS }\n        - { path: ^/modulux, roles: ROLE_MODULUX }",
             "position": "after_target",
             "target": "access_control:"
           }
         ],
         "composer-scripts": {
+          "npm install quill@2.0.3": "script",
           "npm install gridjs": "script",
           "npm install toastify-js": "script",
+          "npm install grapesjs": "script",
           "assets:install --symlink public": "symfony-cmd",
           "npm install ./vendor/friendsofsymfony/jsrouting-bundle/Resources/": "script",
           "doctrine:database:create --if-not-exists": "symfony-cmd",

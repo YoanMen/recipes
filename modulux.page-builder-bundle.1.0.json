@@ -24,22 +24,14 @@
             "target": ".addEntry('app', './assets/app.js')"
           },
           {
-            "file": "./vendor/modulux/core-bundle/templates/base.html.twig",
-            "content": "      {{ encore_entry_link_tags('pageBuilder') }}",
-            "position": "after_target",
-            "target": "{% block stylesheets %}"
-          },
-          {
-            "file": "./vendor/modulux/core-bundle/templates/base.html.twig",
-            "content": "      {{ encore_entry_script_tags('pageBuilder') }}",
-            "position": "after_target",
-            "target": "{% block javascripts %}"
+            "file": "config/services.yaml",
+            "content": "    # service used to define entityResolver\n    # Modulux\\PageBuilderBundle\\Service\\EntityResolverInterface: '@Modulux\\PageBuilderBundle\\Service\\EntityResolverService'",
+            "position": "bottom"
           }
         ],
         "composer-scripts": {
           "npm install aos": "script",
           "npm install glightbox": "script",
-          "npm install grapesjs": "script",
           "npm install grapesjs-blocks-basic": "script",
           "npm install grapesjs-component-code-editor": "script",
           "npm install grapesjs-custom-code": "script",
