@@ -40,6 +40,7 @@
           "npm install grapesjs-navbar": "script",
           "npm install grapesjs-style-gradient": "script",
           "npm install grapesjs-tooltip": "script",
+          "npm install grapesjs-plugin-header": "script",
           "npm install swiper": "script",
           "doctrine:database:create --if-not-exists": "symfony-cmd",
           "doctrine:schema:update --force": "symfony-cmd",
