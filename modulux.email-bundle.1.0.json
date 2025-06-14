@@ -1,0 +1,50 @@
+{
+  "manifests": {
+    "modulux/email-bundle": {
+      "manifest": {
+        "bundles": {
+          "Modulux\\EmailBundle\\ModuluxEmailBundle": ["all"]
+        },
+        "add-lines": [
+          {
+            "file": "config/routes.yaml",
+            "content": "modulux_email_bundle.routes:\n    resource: '@ModuluxEmailBundle/config/routes.yaml'\n",
+            "position": "before_target",
+            "target" : "controllers:"
+          },
+          {
+            "file": "webpack.config.js",
+            "content": "    .addEntry('email', './vendor/modulux/email-bundle/assets/js/app.js')",
+            "position": "after_target",
+            "target": ".addEntry('app', './assets/app.js')"
+          },
+          {
+            "file": "webpack.config.js",
+            "content": "    .addEntry('global', './vendor/modulux/page-builder-bundle/assets/js/global.js')",
+            "position": "after_target",
+            "target": ".addEntry('app', './assets/app.js')"
+          },
+          {
+            "file": "./vendor/modulux/core-bundle/templates/base.html.twig",
+            "content": "     {{ encore_entry_link_tags('email') }}",
+            "position": "after_target",
+            "target": "{{ encore_entry_link_tags('core') }}"
+          },
+          {
+            "file": "./vendor/modulux/core-bundle/templates/base.html.twig",
+            "content": "     {{ encore_entry_script_tags('email') }}",
+            "position": "after_target",
+            "target": "{{ encore_entry_script_tags('core') }}"
+          }
+        ],
+        "composer-scripts": {
+          "npm install grapesjs": "script",
+          "npm install grapesjs-mjml" : "script",
+          "doctrine:schema:update --force": "symfony-cmd",
+          "modulux:email:permissions": "symfony-cmd"
+        }
+      },
+      "ref": "226fd0095070d66b6b030aa1d82546f0ed9d2bcb"
+    }
+  }
+}

@@ -27,6 +27,12 @@
             "file": "config/services.yaml",
             "content": "    # service used to define entityResolver\n    # Modulux\\PageBuilderBundle\\Service\\EntityResolverInterface: '@Modulux\\PageBuilderBundle\\Service\\EntityResolverService'",
             "position": "bottom"
+          },
+          {
+            "file": "config/modulux.yaml",
+            "content": "  page_builder:\n    customs_blocs:\n    styles: /build/app.css\n    scripts: /build/app.js\n    fonts:",
+            "position": "after_target",
+            "target" : "modulux:"
           }
         ],
         "composer-scripts": {
