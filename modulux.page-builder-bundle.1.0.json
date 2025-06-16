@@ -46,6 +46,8 @@
           "npm install grapesjs-style-gradient": "script",
           "npm install grapesjs-tooltip": "script",
           "npm install grapesjs-plugin-header": "script",
+          "npm install grapesjs-preset-webpage": "script",
+          "npm install grapesjs-style-bg" : "script",
           "npm install swiper": "script",
           "doctrine:database:create --if-not-exists": "symfony-cmd",
           "doctrine:schema:update --force": "symfony-cmd",
