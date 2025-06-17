@@ -30,7 +30,7 @@
           },
           {
             "file": "config/modulux.yaml",
-            "content": "    page_builder:\n    customs_blocs:\n    styles: /build/app.css\n    scripts: /build/app.js\n    fonts:",
+            "content": "  page_builder:\n    customs_blocs:\n    fonts:",
             "position": "bottom"
           }
         ],
