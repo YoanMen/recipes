@@ -50,6 +50,7 @@
         "composer-scripts": {
           "npm install quill@2.0.3": "script",
           "npm install gridjs": "script",
+          "npm install @floating-ui/dom": "script",
           "npm install toastify-js": "script",
           "npm install grapesjs": "script",
           "assets:install --symlink public": "symfony-cmd",
